@@ -4,7 +4,7 @@ const productRoute = express.Router();
 const {
     getAllProducts,
     getProduct
-} = require('../../Controller/User/product.controller');
+} = require('../../controller/user/product.controller');
 
 // GET ALL PRODUCT
 productRoute.get('/getAllProduct', getAllProducts);
