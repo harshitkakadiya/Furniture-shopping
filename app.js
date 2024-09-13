@@ -10,7 +10,10 @@ const usersRoute = require('./src/routes/user.routes');
 app.use('/api/user', usersRoute);
 
 
-
+app.get("/" , (req ,res) =>{ 
+    res.write("welcome to furniture shopping"); 
+    res.end(); 
+})
 // DATABASE COLLECTION
 async function main() {
     await mongoose.connect(process.env.mongodb_url);                  // Online Database
