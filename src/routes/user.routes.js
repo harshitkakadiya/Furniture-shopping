@@ -1,6 +1,6 @@
 const express = require('express');
 const userRoute = express.Router();
-const { userVerifyToken } = require('../../helper/userVerifyToken');
+const { userVerifyToken } = require('../helper/userVerifyToken');
 const {
     registerUser,
     loginUser,
@@ -9,7 +9,7 @@ const {
     updateUser,
     deleteUser,
     updatePassword
-} = require('../../controller/user/user.controller');
+} = require('../controller/user.controller');
 
 
 // REGISTER USER
